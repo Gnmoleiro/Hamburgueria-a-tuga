@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+:root{
+    --primary-color: #FEF3E2;
+    --seconday-color: #FAB12F;
+    --third-color: #FA812F;
+    --fourth-color: #DD0303;
+    /*--background-color: #FFFFFF;*/
+    --danger-color: rgb(235, 56, 56);
+    --success-color: rgb(21, 145, 21);
+    --alert-color: rgb(247, 223, 8);
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-title: 48px;
+    --font-size-body: 18px;
+    --font-weight-title: 900;
+    --font-weight-body: 600
+}
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+/* Header Styles */
+.header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 20px;
+    width: 7%;
+    height: auto;
+}
+.header ul li{
+    list-style: none;
+    display: inline-flex;
+    margin: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: var(--font-weight-body);
+    font-size: var(--font-size-body);
+}
+
+header ul li a:hover{
+    
+    transition: 0.7s ease-in-out;
+    background: var(--fourth-color);
+    color: var(--primary-color);
+}
+
+header ul li a:not(:active){
+    transition:0.7s ease-in-out;
+}
+
+/* End Header Styles */
+h1{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-title);
+}
+
+p{}
+
+
+
+
+.hero-banner{}
+
+
+
+
+
