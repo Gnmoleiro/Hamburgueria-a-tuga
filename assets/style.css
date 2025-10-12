@@ -43,8 +43,15 @@ body {
     font-family: var(--font-family-primary);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
+.main{
+    flex: 1;
+}
 /* Header Styles */
 
 
@@ -99,6 +106,12 @@ header ul li a:not(:active) {
 
 /* End Header Styles */
 
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
 
 h1 {
     font-family: var(--font-family-secondary);
@@ -125,11 +138,12 @@ p {}
 .footer {
     background: var(--var2-primary-color);
     font-family: var(--font-family-primary);
-    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     color: var(--var1-primary-color);    /* Where was only white */
     padding: 30px 30px 20px 20px;
+    
 }
 
 .footer-logo-sc {
@@ -152,23 +166,20 @@ p {}
     color: var(--var1-primary-color);  
 }
 
-
-/* Footer Icon Styles ( On Demand )*/
-
-
 .footer-logo-sc a .icon-footer:hover {
+
     color: var(--secondary-color);
     scale: 1.7;
     transform: translateY(-2px);
     transition: 0.3s ease-in-out;
+
 }
 
 .footer-logo-sc .icon-footer:not(:active) {
+
     transition: 0.3s ease-in-out;
+    
 }
-
-
-/* End Footer Icon Styles ( On Demand )*/
 
 .footer-list ul li {
 
